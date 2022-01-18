@@ -1,0 +1,88 @@
+main{
+    margin: auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-areas: "h h h"
+                         "n n n"
+                         "ar ar as"
+                         "f f f ";
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header{
+    grid-area: h;
+    color: darkgreen;
+}
+nav{
+    grid-area: n;
+    background-color: darkgreen;
+}
+nav ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+nav a{
+    text-decoration: none;
+    color: darkgrey;
+}
+article{
+    grid-area: ar;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: justify;
+}
+aside{
+    grid-area: as;
+    margin: 5px;
+}
+footer{
+    grid-area: f;
+    text-align: center;
+    color: green;
+}
+aside img{
+    max-width: 100%;
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding: 2px;
+}
+article .benz{
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding: 3px;
+    margin: 5px;
+}
+article .ford{
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding: 3px;
+    margin: 5px;
+}
+article .benz img{
+    max-width: 100%;
+    border: 1px solid gray;
+    border-radius: 7px;
+}
+article .ford img{
+    max-width: 100%;
+    border: 1px solid gray;
+    border-radius: 7px;
+}
+@media only screen and (max-width: 768px){
+    main{
+        grid-template-areas: "n"
+                             "h"
+                             "ar"
+                             "as"
+                             "f";
+    }
+}
+@media only screen and (max-width: 300px){
+    nav ul{
+        grid-template-columns: 1fr;
+    }
+    article{
+        grid-template-columns: 1fr;
+    }
+}

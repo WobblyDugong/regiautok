@@ -1,0 +1,8 @@
+table{
+    max-width: 200%;
+    max-height: 70px;
+}
+article{
+    display: grid;
+    grid-template-columns: 1fr;
+}

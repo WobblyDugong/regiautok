@@ -1,0 +1,10 @@
+article{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+article ul{
+    list-style-type: decimal;
+}
+article li{
+    margin: 10px;
+}
